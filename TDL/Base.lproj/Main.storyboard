@@ -15,7 +15,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ToDoItemCell" id="jdQ-sW-lEE">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="toDoItemCell" id="jdQ-sW-lEE">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jdQ-sW-lEE" id="G9s-A2-07p">
@@ -29,7 +29,13 @@
                             <outlet property="delegate" destination="b1E-tz-bEc" id="56a-YE-kMD"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="TDL" id="ot7-bH-GeG"/>
+                    <navigationItem key="navigationItem" title="TDL" id="ot7-bH-GeG">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="BQB-yE-Wg7">
+                            <connections>
+                                <action selector="addButtonPressed:" destination="b1E-tz-bEc" id="FJh-Mm-q3q"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dOT-2B-8HM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
