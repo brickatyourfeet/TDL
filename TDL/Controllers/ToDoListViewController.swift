@@ -12,21 +12,14 @@ class ToDoListViewController: UITableViewController {
     
     var items = [Item]()
     
-    let defaults = UserDefaults.standard
+    //let defaults = UserDefaults.standard
     
     let dataFilePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("Items.plist")
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let itemsFromDefaults = defaults.array(forKey: "TDItems") as? [Item] {
-            items = itemsFromDefaults
-        }
-        
-        let newItem = Item()
-        newItem.title = "test item"
-        items.append(newItem)
-        
+        loadItems()
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -92,6 +85,18 @@ class ToDoListViewController: UITableViewController {
         
         
         tableView.reloadData()
+    }
+    
+    func loadItems() {
+        if let data = try? Data(contentsOf: dataFilePath!) {
+            let decoder = PropertyListDecoder()
+            do {
+                items = try decoder.decode([Item].self, from: data)
+            } catch {
+                print("Error loading items, \(error)")
+            }
+           
+        }
     }
     
 }
