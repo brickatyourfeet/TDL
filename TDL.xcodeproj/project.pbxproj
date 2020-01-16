@@ -14,6 +14,7 @@
 		A851AEE823C44FCE00165C4D /* TDL.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A851AEE623C44FCE00165C4D /* TDL.xcdatamodeld */; };
 		A851AEEA23C44FD100165C4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A851AEE923C44FD100165C4D /* Assets.xcassets */; };
 		A851AEED23C44FD100165C4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A851AEEB23C44FD100165C4D /* LaunchScreen.storyboard */; };
+		A87619AB23D02239005654CD /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A87619A923D02239005654CD /* DataModel.xcdatamodeld */; };
 		A8D3D1D923C7D9C20078BDA6 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D3D1D823C7D9C20078BDA6 /* Item.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		A851AEE923C44FD100165C4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A851AEEC23C44FD100165C4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A851AEEE23C44FD100165C4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A87619AA23D02239005654CD /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		A8D3D1D823C7D9C20078BDA6 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +78,7 @@
 		A8D3D1DA23C7D9DC0078BDA6 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
+				A87619A923D02239005654CD /* DataModel.xcdatamodeld */,
 				A8D3D1D823C7D9C20078BDA6 /* Item.swift */,
 			);
 			path = "Data Model";
@@ -171,6 +174,7 @@
 				A8D3D1D923C7D9C20078BDA6 /* Item.swift in Sources */,
 				A851AEE823C44FCE00165C4D /* TDL.xcdatamodeld in Sources */,
 				A851AEE223C44FCE00165C4D /* ToDoListViewController.swift in Sources */,
+				A87619AB23D02239005654CD /* DataModel.xcdatamodeld in Sources */,
 				A851AEDE23C44FCE00165C4D /* AppDelegate.swift in Sources */,
 				A851AEE023C44FCE00165C4D /* SceneDelegate.swift in Sources */,
 			);
@@ -379,6 +383,16 @@
 			);
 			currentVersion = A851AEE723C44FCE00165C4D /* TDL.xcdatamodel */;
 			path = TDL.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		A87619A923D02239005654CD /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A87619AA23D02239005654CD /* DataModel.xcdatamodel */,
+			);
+			currentVersion = A87619AA23D02239005654CD /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
